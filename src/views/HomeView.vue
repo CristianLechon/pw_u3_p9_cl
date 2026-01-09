@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Home view</h1>
+    <h1>Home</h1>
   </div>
 </template>
 
@@ -9,5 +9,6 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
+  name: "HomeView"
 }
 </script>
