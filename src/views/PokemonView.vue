@@ -99,6 +99,6 @@ export default {
 <style scoped>
 h1 {
   position: relative;
-  left: 36%;
+  left: 2%;
 }
 </style>

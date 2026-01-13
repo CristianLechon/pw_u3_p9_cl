@@ -37,7 +37,7 @@ export default {
       //console.log("oldValue ",oldValue);
       if (value.includes("?")) {
         //Llamar al API
-        this.respuesta = 'Pensando....';
+        this.respuesta = "Pensando....";
         this.consumir();
       }
     },
@@ -51,13 +51,23 @@ export default {
       console.log(resp);
       console.log(resp.answer);
       this.respuesta = resp.answer;
-      
     },
   },
 };
 </script>
 
 <style scoped>
+.pregunta-container {
+  display: flex;
+  flex-direction: column; /* elementos uno debajo del otro */
+  align-items: center; /* centrado vertical */
+  justify-content: center; /* centrado horizontal */
+}
+
+.pregunta-container {
+  position: relative;
+  min-height: 100vh; /* altura de toda la pantalla */
+}
 img,
 .oscuro {
   height: 100vh;
@@ -71,8 +81,31 @@ img,
 h1 {
   font-size: 80px;
 }
-
 .oscuro {
-background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+input {
+  width: 350px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 150px;
 }
 </style>
